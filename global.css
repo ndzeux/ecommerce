@@ -11,3 +11,18 @@ body{
 	line-height: 24px;
 	color: #222;
 }
+span.ripple {
+	position: absolute;
+	border-radius: 100%;
+	width: 300px;
+	height: 300px;
+	transform: scale(0);
+	animation: ripple 600ms linear;
+}
+
+@keyframes ripple {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
+}
